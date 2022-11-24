@@ -1,6 +1,22 @@
 <script>
 export default {
-    name:'AppHeader'
+    name:'AppHeader',
+    data(){
+        return{
+            links:[
+                'Characters',
+                'Comics',
+                'Movies',
+                'TV',
+                'Games',
+                'Collectibles',
+                'Videos',
+                'Fans',
+                'News',
+                'Shop'
+            ]
+        }
+    }
 }
 </script>
 
@@ -10,16 +26,8 @@ export default {
         <img src="../assets/dc-logo.png" alt="logo">
         <nav>
             <ul>
-                <li><a href="#">Characters</a></li>
-                <li><a href="#">Comics</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">TV</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Collectibles</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Fans</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Shop</a></li>
+                <li v-for="link in links"><a href="#">{{link}}</a></li>
+                
             </ul>
         </nav>
     </div>
