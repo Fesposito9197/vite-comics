@@ -5,9 +5,45 @@ export default {
 </script>
 
 <template>
-  <h1>QUESTO E IL MIO HEADER</h1>
+  <header>
+    <div class="container">
+        <img src="../assets/dc-logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="">Characters</a></li>
+                <li><a href="">Comics</a></li>
+                <li><a href="">Movies</a></li>
+                <li><a href="">TV</a></li>
+                <li><a href="">Games</a></li>
+                <li><a href="">Collectibles</a></li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">Fans</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Shop</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+    header{
+        padding: 20px 0;
+    }
+    img{
+        object-fit:contain;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            display: inline-block;
+            padding: 0 10px;
 
+            a{
+                text-decoration: none;
+                line-height: 103px;
+            }
+        }
+    }
 </style>
