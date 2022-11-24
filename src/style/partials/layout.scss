@@ -11,7 +11,9 @@
     }
     
 }
-
+body{
+    overflow: hidden;
+}
 .card{
     display: flex;
     color: var(--white-text);
@@ -20,11 +22,21 @@
     
     img{
         height: 40%;
+        
     }
     h3{
         flex-grow: 1;
         padding-left: 10px;
         font-weight: 300;
+        
     }
 }
 
+.btn{
+    color: var(--white-text);
+    background-color: inherit;
+    border-color: var(--primary-color);
+    
+    padding: 10px;
+    
+}

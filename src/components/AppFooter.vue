@@ -56,11 +56,11 @@ export default {
   </div>
   <div class="footer-bottom">
     <div class="container d-flex j-content-sb">
-      <button>
+      <button class="btn">
         SIGN-UP NOW!
       </button>
-      <div>
-        <h3></h3>
+      <div class="footer-img">
+        <h3>FOLLOW US</h3>
         <img src="../assets/footer-facebook.png" alt="">
         <img src="../assets/footer-twitter.png" alt="">
         <img src="../assets/footer-youtube.png" alt="">
@@ -82,6 +82,7 @@ export default {
   .footer-bottom{
     background-color: var(--footer-bg);
     padding: 30px;
+    
   }
     
    
@@ -108,7 +109,18 @@ export default {
       padding-bottom: 5px;
     }
   }
-
+  .footer-img{
+    display: flex;
+    h3{
+      color: var(--primary-color);
+      padding: 10px;
+    }
+    img{
+      display: inline-block;
+      padding-right: 15px;
+      object-fit: contain;
+    }
+  }
 
 
   
