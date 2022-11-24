@@ -5,14 +5,14 @@ export default {
 </script>
 
 <template>
-  <main class="main-top">
+  <div class="main-top">
     <div class="container ">
       <h1>-->CONTENT GOES HERE</h1>
     </div>
     
-  </main>
-  <main class="main-footer">
-    <div class="container">
+  </div>
+  <div class="main-bottom">
+    <div class="container d-flex">
       <div class="card">
         <img src="../assets/buy-comics-digital-comics.png" alt="">
         <h3>DIGITAL COMICS</h3>
@@ -35,7 +35,7 @@ export default {
       </div>
     </div>
 
-  </main>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -50,7 +50,7 @@ export default {
     }
   }
 
-  .main-footer{
+  .main-bottom{
     background-color: var(--primary-color);
     padding: 30px 0;
   }

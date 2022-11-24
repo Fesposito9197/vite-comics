@@ -6,7 +6,7 @@ export default {
 
 <template>
   <header>
-    <div class="container">
+    <div class="container d-flex j-content-sb">
         <img src="../assets/dc-logo.png" alt="logo">
         <nav>
             <ul>
