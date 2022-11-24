@@ -50,8 +50,9 @@ export default {
           <li><a href="#">DC Power Visa</a></li>
         </ul>
       </div>
-      <img src="../assets/dc-logo-bg.png" alt="">
+      
     </div>
+    
   </div>
   <div class="footer-bottom">
 
@@ -60,15 +61,22 @@ export default {
 
 <style lang="scss" scoped>
   .footer-top{
-    background-image: url(../assets/footer-bg.jpg);
+    background-image: url(../assets/footer-bg.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
   
-    padding: 40px 0;
-    img{
-      
-      object-fit:fill;
-    }
+    
+   
   }
+  .container{
+    padding: 15px 0;
+    background-image: url(../assets/dc-logo-bg.png);
+    background-repeat: no-repeat;
+    background-position:right;
+    
 
+  }
   .footer-list{
     list-style: none;
     padding: 20px;
