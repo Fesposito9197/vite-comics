@@ -30,9 +30,7 @@ export default {
     header{
         padding: 20px 0;
     }
-    img{
-        object-fit:contain;
-    }
+    
     ul{
         list-style: none;
         display: flex;
