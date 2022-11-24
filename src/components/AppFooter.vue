@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="footer-top">
-    <div class="container d-flex">
+    <div class="container d-flex bg-logo">
       <div>
         <ul class="footer-list">
           <h2>DC COMICS</h2>
@@ -55,7 +55,20 @@ export default {
     
   </div>
   <div class="footer-bottom">
+    <div class="container d-flex j-content-sb">
+      <button>
+        SIGN-UP NOW!
+      </button>
+      <div>
+        <h3></h3>
+        <img src="../assets/footer-facebook.png" alt="">
+        <img src="../assets/footer-twitter.png" alt="">
+        <img src="../assets/footer-youtube.png" alt="">
+        <img src="../assets/footer-pinterest.png" alt="">
+        <img src="../assets/footer-periscope.png" alt="">
+      </div>
 
+    </div>
   </div>
 </template>
 
@@ -64,24 +77,26 @@ export default {
     background-image: url(../assets/footer-bg.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
+  }
     
-  
+  .footer-bottom{
+    background-color: var(--footer-bg);
+    padding: 30px;
+  }
     
    
-  }
-  .container{
+  .bg-logo{
     padding: 15px 0;
     background-image: url(../assets/dc-logo-bg.png);
     background-repeat: no-repeat;
     background-position:right;
+  }
     
 
-  }
+
   .footer-list{
     list-style: none;
     padding: 20px;
-
-
     h2{
       color: var(--white-text);
       padding-bottom: 10px;
@@ -92,7 +107,9 @@ export default {
       display: inline-block;
       padding-bottom: 5px;
     }
-
   }
+
+
+
   
 </style>
