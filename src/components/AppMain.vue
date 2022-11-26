@@ -1,14 +1,19 @@
 <script>
+import SectionComics from "./SectionComics.vue";
+
 export default {
+  components:{
+    SectionComics
+  },
     name:'AppMain'
 }
 </script>
 
 <template>
+  <div class="jumbotron"></div>
+
   <div class="main-top">
-    <div class="container ">
-      <h1>-->CONTENT GOES HERE</h1>
-    </div>
+    <SectionComics/>
     
   </div>
   <div class="main-bottom">
@@ -49,7 +54,14 @@ export default {
       }
     }
   }
-
+  .jumbotron{
+    background-image: url(../assets/jumbotron.jpg);
+    
+    height: 50vh;
+    
+    background-size: cover;
+    
+  }
   .main-bottom{
     background-color: var(--primary-color);
     padding: 30px 0;

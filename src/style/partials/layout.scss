@@ -1,18 +1,16 @@
 .container{
     max-width: 1200px;
     margin:auto;
-    &.d-flex{
-        display: flex;
-        
-
-    }
+    
     &.j-content-sb{
         justify-content: space-between;
     }
     
 }
-body{
-    overflow: hidden;
+.d-flex{
+    display: flex;
+    
+
 }
 .card{
     display: flex;
